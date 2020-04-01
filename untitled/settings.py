@@ -25,7 +25,7 @@ SECRET_KEY = '83y%_eevx%22bsm_i4wf+!fjbwa)i!v%oo-3-d^7vw7+qbn@5v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://297019-cu94912.tmweb.ru/']
 
 
 # Application definition
@@ -125,3 +125,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
